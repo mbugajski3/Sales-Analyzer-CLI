@@ -94,7 +94,7 @@ def print_report(
     ):
 
 
-    print("SALES ANALYZER REPORT")
+    print("SALES-ANALYZER-CLI 1.0")
     print()
     print("Summary:")
     print(f"Total revenue : {round(total_revenue, 2)} PLN")
@@ -120,6 +120,53 @@ def print_report(
     print("Revenue by product:")
     for product in revenue_by_product:
         print(f"- {product}: {round(revenue_by_product[product], 2)} PLN")
+    print()
+    print("Report saved to sales_report.txt")
+    print()
+    
+
+def save_report(
+    total_revenue,
+    total_quantity_sold,
+    order_count,
+    top_selling_product_name,
+    top_selling_product_quantity,
+    top_revenue_product_name,
+    top_revenue_product_value,
+    top_revenue_category_name,
+    top_revenue_category_value,
+    quantity_by_product,
+    revenue_by_category,
+    revenue_by_product
+    ):
+    
+    with open("sales_report.txt", "w") as file:
+        file.write("SALES-ANALYZER-CLI 1.0 \n")
+        file.write("\n")
+        file.write("Summary:\n")
+        file.write(f"Total revenue: {round(total_revenue, 2)} PLN\n")
+        file.write(f"Total quantity sold: {total_quantity_sold} pieces\n")
+        file.write(f"Average order value: {round(total_revenue / order_count, 2)} PLN\n") 
+        file.write("\n")
+        file.write("Top results: \n")
+        file.write(f"Best-selling product overall: {top_selling_product_name} - {top_selling_product_quantity} pieces\n")
+        file.write(f"Product with highest revenue: {top_revenue_product_name} - {round(top_revenue_product_value, 2)} PLN\n")
+        file.write(f"Category with highest revenue: {top_revenue_category_name} - {round(top_revenue_category_value, 2)} PLN\n")
+        file.write("\n")
+        file.write("Products sold: \n")
+        for product in quantity_by_product:
+            if quantity_by_product[product] == 1:
+                file.write(f"- {product}: {quantity_by_product[product]} piece\n")
+            else:
+                file.write(f"- {product}: {quantity_by_product[product]} pieces\n")
+        file.write("\n")
+        file.write("Revenue by category: \n")
+        for category in revenue_by_category:
+            file.write(f"- {category}: {round(revenue_by_category[category], 2)} PLN\n")
+        file.write("\n")
+        file.write("Revenue by product:\n")
+        for product in revenue_by_product:
+            file.write(f"- {product}: {round(revenue_by_product[product], 2)} PLN\n")
 
 
 def main():
@@ -142,6 +189,21 @@ def main():
         revenue_by_category,
         revenue_by_product
     )
+    save_report(    
+    total_revenue,
+    total_quantity_sold,
+    order_count,
+    top_selling_product_name,
+    top_selling_product_quantity,
+    top_revenue_product_name,
+    top_revenue_product_value,
+    top_revenue_category_name,
+    top_revenue_category_value,
+    quantity_by_product,
+    revenue_by_category,
+    revenue_by_product
+    )
+    
 
 
 if __name__ == "__main__":

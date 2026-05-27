@@ -1,0 +1,47 @@
+SALES-ANALYZER-CLI 1.0 
+
+Summary:
+Total revenue: 2240.0 PLN
+Total quantity sold: 55 pieces
+Average order value: 149.33 PLN
+
+Top results: 
+Best-selling product overall: Apples - 15 pieces
+Product with highest revenue: Monitor - 700.0 PLN
+Category with highest revenue: Electronics - 1120.0 PLN
+
+Products sold: 
+- Apples: 15 pieces
+- Bananas: 9 pieces
+- Keyboard: 1 piece
+- Mouse: 2 pieces
+- Chair: 1 piece
+- Desk: 1 piece
+- Monitor: 1 piece
+- Notebook: 4 pieces
+- Pen: 10 pieces
+- Desk Lamp: 2 pieces
+- Orange Juice: 3 pieces
+- Headphones: 1 piece
+- Water Bottle: 5 pieces
+
+Revenue by category: 
+- Food: 105.0 PLN
+- Electronics: 1120.0 PLN
+- Furniture: 810.0 PLN
+- Office: 205.0 PLN
+
+Revenue by product:
+- Apples: 45.0 PLN
+- Bananas: 36.0 PLN
+- Keyboard: 120.0 PLN
+- Mouse: 100.0 PLN
+- Chair: 250.0 PLN
+- Desk: 400.0 PLN
+- Monitor: 700.0 PLN
+- Notebook: 60.0 PLN
+- Pen: 20.0 PLN
+- Desk Lamp: 160.0 PLN
+- Orange Juice: 24.0 PLN
+- Headphones: 200.0 PLN
+- Water Bottle: 125.0 PLN
