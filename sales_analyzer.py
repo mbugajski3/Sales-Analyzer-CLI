@@ -27,6 +27,11 @@ def load_sales(filename):
             quantity = int(quantity)
             order_id = int(order_id)
             price = float(price)
+
+            if quantity <= 0:
+                raise ValueError
+            if price < 0:
+                raise ValueError
     
     
             sale = {
