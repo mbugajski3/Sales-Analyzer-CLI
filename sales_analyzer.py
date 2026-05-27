@@ -1,35 +1,35 @@
 def load_sales(filename):
-    file = open(filename)
-    headers = next(file)
-    sales = []
+    with open(filename) as file:
+        headers = next(file)
+        sales = []
 
-    for line in file:
-        line = line.strip()
-        columns = line.split(",")
-        order_id = columns[0]
-        date = columns[1]
-        product = columns[2]
-        category = columns[3]
-        quantity = columns[4]
-        price = columns[5]
+        for line in file:
+            line = line.strip()
+            columns = line.split(",")
+            order_id = columns[0]
+            date = columns[1]
+            product = columns[2]
+            category = columns[3]
+            quantity = columns[4]
+            price = columns[5]
     
-        quantity = int(quantity)
-        order_id = int(order_id)
-        price = float(price)
+            quantity = int(quantity)
+            order_id = int(order_id)
+            price = float(price)
     
     
-        sale = {
-            "order_id" : order_id,
-            "date" : date,
-            "product" : product,
-            "category" : category,
-            "quantity" : quantity,
-            "price" : price,
-       }
-        sales.append(sale)
+            sale = {
+                "order_id": order_id,
+                "date": date,
+                "product": product,
+                "category": category,
+                "quantity": quantity,
+                "price": price,
+           }
+            sales.append(sale)
 
-    file.close()
-    return sales
+    
+        return sales
 
 
 def calculate_metrics(sales):
@@ -90,12 +90,14 @@ def print_report(
     top_revenue_category_value
     ):
 
-    print(f"Total revenue : {round(total_revenue,2)} PLN")
+    print(f"Total revenue : {round(total_revenue, 2)} PLN")
     print(f"Total quantity sold : {total_quantity_sold} pieces")
-    print(f"Average order value : {round(total_revenue / order_count,2)}")
+    print(f"Average order value : {round(total_revenue / order_count, 2)}")
     print(f"Best-selling product overall: {top_selling_product_name} - {top_selling_product_quantity} pieces")
-    print(f"Product with highest revenue: {top_revenue_product_name} - {round(top_revenue_product_value,2)} PLN")
-    print(f"Category with highest revenue: {top_revenue_category_name} - {round(top_revenue_category_value,2)} PLN")
+    print(f"Product with highest revenue: {top_revenue_product_name} - {round(top_revenue_product_value, 2)} PLN")
+    print(f"Category with highest revenue: {top_revenue_category_name} - {round(top_revenue_category_value, 2)} PLN")
+
+
 
 def main():
     sales = load_sales("sales.csv")
