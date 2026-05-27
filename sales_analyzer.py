@@ -1,17 +1,17 @@
+import csv
+
 def load_sales(filename):
     with open(filename) as file:
-        headers = next(file)
+        reader = csv.DictReader(file)
         sales = []
 
-        for line in file:
-            line = line.strip()
-            columns = line.split(",")
-            order_id = columns[0]
-            date = columns[1]
-            product = columns[2]
-            category = columns[3]
-            quantity = columns[4]
-            price = columns[5]
+        for row in reader: 
+            order_id = row["order_id"]
+            date = row["date"]
+            product = row["product"]
+            category = row["category"]
+            quantity = row["quantity"]
+            price = row["price"]
     
             quantity = int(quantity)
             order_id = int(order_id)
@@ -96,7 +96,6 @@ def print_report(
     print(f"Best-selling product overall: {top_selling_product_name} - {top_selling_product_quantity} pieces")
     print(f"Product with highest revenue: {top_revenue_product_name} - {round(top_revenue_product_value, 2)} PLN")
     print(f"Category with highest revenue: {top_revenue_category_name} - {round(top_revenue_category_value, 2)} PLN")
-
 
 
 def main():
