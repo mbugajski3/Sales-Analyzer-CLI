@@ -87,15 +87,39 @@ def print_report(
     top_revenue_product_name,
     top_revenue_product_value,
     top_revenue_category_name,
-    top_revenue_category_value
+    top_revenue_category_value,
+    quantity_by_product,
+    revenue_by_category,
+    revenue_by_product
     ):
 
+
+    print("SALES ANALYZER REPORT")
+    print()
+    print("Summary:")
     print(f"Total revenue : {round(total_revenue, 2)} PLN")
     print(f"Total quantity sold : {total_quantity_sold} pieces")
     print(f"Average order value : {round(total_revenue / order_count, 2)}")
+    print()
+    print("Top results: ")
     print(f"Best-selling product overall: {top_selling_product_name} - {top_selling_product_quantity} pieces")
     print(f"Product with highest revenue: {top_revenue_product_name} - {round(top_revenue_product_value, 2)} PLN")
     print(f"Category with highest revenue: {top_revenue_category_name} - {round(top_revenue_category_value, 2)} PLN")
+    print()
+    print("Products sold: ")
+    for product in quantity_by_product:
+        if quantity_by_product[product] == 1:
+            print(f"- {product}: {quantity_by_product[product]} piece")
+        else:
+            print(f"- {product}: {quantity_by_product[product]} pieces")
+    print()
+    print("Revenue by category: ")
+    for category in revenue_by_category:
+        print(f"- {category}: {round(revenue_by_category[category], 2)} PLN")
+    print()
+    print("Revenue by product:")
+    for product in revenue_by_product:
+        print(f"- {product}: {round(revenue_by_product[product], 2)} PLN")
 
 
 def main():
@@ -104,7 +128,7 @@ def main():
     top_selling_product_name, top_selling_product_quantity = find_top_item(quantity_by_product)
     top_revenue_product_name, top_revenue_product_value = find_top_item(revenue_by_product)
     top_revenue_category_name, top_revenue_category_value = find_top_item(revenue_by_category)
-    print_report(
+    print_report( 
         total_revenue,
         total_quantity_sold,
         order_count,
@@ -113,7 +137,10 @@ def main():
         top_revenue_product_name,
         top_revenue_product_value,
         top_revenue_category_name,
-        top_revenue_category_value
+        top_revenue_category_value,
+        quantity_by_product,
+        revenue_by_category,
+        revenue_by_product
     )
 
 
