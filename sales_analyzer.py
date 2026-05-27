@@ -3,6 +3,17 @@ import csv
 def load_sales(filename):
     with open(filename) as file:
         reader = csv.DictReader(file)
+        
+        required_columns = ["order_id", "date", "product", "category", "quantity", "price"]
+        missing_columns = []
+        
+        for column in required_columns:
+            if column not in reader.fieldnames:
+                missing_columns.append(column)
+        if missing_columns:
+            print(f"Error: missing required columns: {missing_columns}")
+            exit()
+
         sales = []
 
         for row in reader: 
@@ -176,6 +187,12 @@ def main():
         sales = load_sales("sales.csv")
     except FileNotFoundError:
         print("Error: sales.csv file not found.")
+        exit()
+    except ValueError:
+        print("Error: invalid numeric value in sales.csv.")
+        exit()
+    if not sales:
+        print("Error: sales.csv contains no sales data.")
         exit()
 
     total_revenue, total_quantity_sold, order_count, quantity_by_product, revenue_by_product, revenue_by_category = calculate_metrics(sales)

@@ -8,7 +8,7 @@ Average order value: 11 656.30 PLN
 Top results: 
 Best-selling product overall: Protein Bars - 1420 pieces
 Product with highest revenue: Smartphone X - 172 200.00 PLN
-Category with highest revenue: Electronics - 631 420.00 PLN
+Category with highest revenue: Electronics - 619 020.00 PLN
 
 Products sold: 
 - Laptop Pro 16: 21 pieces
@@ -43,8 +43,9 @@ Products sold:
 - Firewall Appliance: 3 pieces
 
 Revenue by category: 
-- Electronics: 631 420.00 PLN
+- two: 12 400.00 PLN
 - Furniture: 188 240.00 PLN
+- Electronics: 619 020.00 PLN
 - Food: 58 555.00 PLN
 - Office: 98 915.00 PLN
 - IT Equipment: 188 500.00 PLN
