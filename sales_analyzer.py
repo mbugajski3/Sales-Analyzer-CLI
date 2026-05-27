@@ -1,5 +1,4 @@
 import csv
-from math import prod
 
 file = open("sales.csv")
 headers = next(file)
