@@ -1,0 +1,16 @@
+order_id,date,product,category,quantity,price
+1,2025-01-01,Apples,Food,5,3
+2,2025-01-01,Bananas,Food,3,4
+3,2025-01-02,Keyboard,Electronics,1,120
+4,2025-01-02,Mouse,Electronics,2,50
+5,2025-01-03,Apples,Food,10,3
+6,2025-01-03,Chair,Furniture,1,250
+7,2025-01-04,Desk,Furniture,1,400
+8,2025-01-04,Bananas,Food,6,4
+9,2025-01-05,Monitor,Electronics,1,700
+10,2025-01-05,Notebook,Office,4,15
+11,2025-01-06,Pen,Office,10,2
+12,2025-01-06,Desk Lamp,Furniture,2,80
+13,2025-01-07,Orange Juice,Food,3,8
+14,2025-01-07,Headphones,Electronics,1,200
+15,2025-01-08,Water Bottle,Office,5,25
