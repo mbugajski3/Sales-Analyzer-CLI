@@ -102,7 +102,7 @@ def print_report(
     print("Summary:")
     print(f"Total revenue : {format_money(total_revenue)} PLN")
     print(f"Total quantity sold : {total_quantity_sold} pieces")
-    print(f"Average order value : {format_money(total_revenue / order_count)}")
+    print(f"Average order value : {format_money(total_revenue / order_count)} PLN")
     print()
     print("Top results: ")
     print(f"Best-selling product overall: {top_selling_product_name} - {top_selling_product_quantity} pieces")
@@ -172,7 +172,12 @@ def save_report(
 
 
 def main():
-    sales = load_sales("sales.csv")
+    try:
+        sales = load_sales("sales.csv")
+    except FileNotFoundError:
+        print("Error: sales.csv file not found.")
+        exit()
+
     total_revenue, total_quantity_sold, order_count, quantity_by_product, revenue_by_product, revenue_by_category = calculate_metrics(sales)
     top_selling_product_name, top_selling_product_quantity = find_top_item(quantity_by_product)
     top_revenue_product_name, top_revenue_product_value = find_top_item(revenue_by_product)
@@ -205,6 +210,8 @@ def main():
         revenue_by_category,
         revenue_by_product
     )
+
+
     print("Report saved to sales_report.txt")
     print()
     
