@@ -7,6 +7,7 @@ total_quantity_sold = 0
 order_count = 0
 quantity_by_product = {}
 revenue_by_product = {}
+revenue_by_category = {}
 
 for line in file:
     line = line.strip()
@@ -30,6 +31,10 @@ for line in file:
     if product not in revenue_by_product:
         revenue_by_product[product] = 0
     revenue_by_product[product] += revenue
+
+    if category not in revenue_by_category:
+        revenue_by_category[category] = 0
+    revenue_by_category[category] += revenue
 
 best_selling_product_name = list(quantity_by_product.keys())[0]
 best_selling_product_quantity = quantity_by_product[best_selling_product_name]
@@ -56,13 +61,21 @@ for product in revenue_by_product:
 
 print("List of products: ")
 for product in quantity_by_product:
-    print(f"- {product} : {quantity_by_product[product]} pieces")
-print(f"Total revenue: {total_revenue}")
-print(f"Total quantity sold: {total_quantity_sold}")
-print(f"Average order value = {round(total_revenue/order_count,2)}")
+    if quantity_by_product[product] == 1 or 0:
+        print(f"- {product} : {quantity_by_product[product]} piece")
+    else:
+        print(f"- {product} : {quantity_by_product[product]} pieces")
+print()
+print(f"Total revenue: {total_revenue} PLN")
+print(f"Total quantity sold: {total_quantity_sold} pieces")
+print(f"Average order value = {round(total_revenue/order_count,2)} PLN")
 
 print(f"Best selling product overall: {best_selling_product_name} - {best_selling_product_quantity} pieces")
 print(f"Product with highest revenue: {top_revenue_product_name} - {top_revenue_product_value} PLN ")
+print()
+print("List of revenue per category:")
+for category in revenue_by_category:
+    print(f"{category} : {revenue_by_category[category]} PLN")
 
 
 file.close()
