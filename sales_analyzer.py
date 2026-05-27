@@ -84,8 +84,9 @@ print(f"Product with highest revenue: {top_revenue_product_name} - {top_revenue_
 print()
 print("List of revenue per category:")
 for category in revenue_by_category:
-    print(f"- {category} : {revenue_by_category[category]} PLN")
-print(f"Category with highest revenue: {top_category_revenue_name} - {top_category_revenue_value} PLN")
+    print(f"- {category} : {round(revenue_by_category[category],2)} PLN")
+print()
+print(f"Category with highest revenue: {top_category_revenue_name} - {round(top_category_revenue_value,2)} PLN")
 
 
 file.close()
