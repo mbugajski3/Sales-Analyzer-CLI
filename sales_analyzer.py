@@ -42,6 +42,9 @@ best_selling_product_quantity = quantity_by_product[best_selling_product_name]
 top_revenue_product_name = list(revenue_by_product.keys())[0]
 top_revenue_product_value = revenue_by_product[top_revenue_product_name]
 
+top_category_revenue_name = list(revenue_by_category.keys())[0]
+top_category_revenue_value = revenue_by_category[top_category_revenue_name]
+
 
 for product in quantity_by_product:
     quantity = quantity_by_product[product]
@@ -56,6 +59,12 @@ for product in revenue_by_product:
     if revenue > top_revenue_product_value:
         top_revenue_product_value = revenue
         top_revenue_product_name = product
+
+for category in revenue_by_category:
+    revenue = revenue_by_category[category]
+    if revenue > top_category_revenue_value:
+        top_category_revenue_value = revenue
+        top_category_revenue_name = category
 
 
 
@@ -76,6 +85,7 @@ print()
 print("List of revenue per category:")
 for category in revenue_by_category:
     print(f"- {category} : {revenue_by_category[category]} PLN")
+print(f"Category with highest revenue: {top_category_revenue_name} - {top_category_revenue_value} PLN")
 
 
 file.close()
