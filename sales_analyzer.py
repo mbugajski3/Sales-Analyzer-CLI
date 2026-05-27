@@ -32,63 +32,64 @@ def load_sales(filename):
     file.close()
     return sales
 
-total_revenue = 0
-total_quantity_sold = 0
-order_count = 0
-quantity_by_product = {}
-revenue_by_product = {}
-revenue_by_category = {}
 
 sales = load_sales("sales.csv")
 
-for sale in sales:
 
-    order_id = sale["order_id"]
-    date = sale["date"]
-    product = sale["product"]
-    category = sale["category"]
-    quantity = sale["quantity"]
-    price = sale["price"]
+def calculate_metrics(sales):
+
+    total_revenue = 0
+    total_quantity_sold = 0
+    order_count = 0
+    quantity_by_product = {}
+    revenue_by_product = {}
+    revenue_by_category = {}
+
+    for sale in sales:
+
+        product = sale["product"]
+        category = sale["category"]
+        quantity = sale["quantity"]
+        price = sale["price"]
     
     
-    revenue = quantity * price
-    total_revenue += revenue
-    total_quantity_sold += quantity
-    order_count += 1
-    if product not in quantity_by_product:
-        quantity_by_product[product] = 0
-    quantity_by_product[product] += quantity
-    if product not in revenue_by_product:
-        revenue_by_product[product] = 0
-    revenue_by_product[product] += revenue
-    if category not in revenue_by_category:
-        revenue_by_category[category] = 0
-    revenue_by_category[category] += revenue
+        revenue = quantity * price
+        total_revenue += revenue
+        total_quantity_sold += quantity
+        order_count += 1
 
-top_selling_product_name = list(quantity_by_product.keys())[0]
-top_selling_product_quantity = quantity_by_product[top_selling_product_name]
+        if product not in quantity_by_product:
+            quantity_by_product[product] = 0
+        quantity_by_product[product] += quantity
+        if product not in revenue_by_product:
+            revenue_by_product[product] = 0
+        revenue_by_product[product] += revenue
+        if category not in revenue_by_category:
+            revenue_by_category[category] = 0
+        revenue_by_category[category] += revenue
 
-top_revenue_product_name = list(revenue_by_product.keys())[0]
-top_revenue_product_value = revenue_by_product[top_revenue_product_name]
-
-top_revenue_category_name = list(revenue_by_category.keys())[0]
-top_revenue_category_value = revenue_by_category[top_revenue_category_name]
+    return total_revenue,total_quantity_sold,order_count,quantity_by_product,revenue_by_product,revenue_by_category
 
 
-for product in quantity_by_product:
-    if quantity_by_product[product] > top_selling_product_quantity:
-        top_selling_product_name = product
-        top_selling_product_quantity = quantity_by_product[product]
+total_revenue,total_quantity_sold,order_count,quantity_by_product,revenue_by_product,revenue_by_category = calculate_metrics(sales)
 
-for product in revenue_by_product:
-    if revenue_by_product[product] > top_revenue_product_value:
-        top_revenue_product_value = revenue_by_product[product]
-        top_revenue_product_name = product
 
-for category in revenue_by_category:
-    if revenue_by_category[category] > top_revenue_category_value:
-        top_revenue_category_value = revenue_by_category[category]
-        top_revenue_category_name = category
+
+def find_top_item(data):
+    top_data_name = list(data.keys())[0]
+    top_data_value = data[top_data_name]
+    for item in data:
+        if data[item] > top_data_value:
+            top_data_value = data[item]
+            top_data_name = item
+
+    return top_data_name,top_data_value
+
+top_selling_product_name, top_selling_product_quantity = find_top_item(quantity_by_product)
+top_revenue_product_name, top_revenue_product_value = find_top_item(revenue_by_product)
+top_revenue_category_name, top_revenue_category_value = find_top_item(revenue_by_category)
+
+
 
 
 print(f"Total revenue : {round(total_revenue,2)} PLN")
