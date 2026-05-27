@@ -61,7 +61,7 @@ for product in revenue_by_product:
 
 print("List of products: ")
 for product in quantity_by_product:
-    if quantity_by_product[product] == 1 or 0:
+    if quantity_by_product[product] == 1:
         print(f"- {product} : {quantity_by_product[product]} piece")
     else:
         print(f"- {product} : {quantity_by_product[product]} pieces")
@@ -75,7 +75,7 @@ print(f"Product with highest revenue: {top_revenue_product_name} - {top_revenue_
 print()
 print("List of revenue per category:")
 for category in revenue_by_category:
-    print(f"{category} : {revenue_by_category[category]} PLN")
+    print(f"- {category} : {revenue_by_category[category]} PLN")
 
 
 file.close()
