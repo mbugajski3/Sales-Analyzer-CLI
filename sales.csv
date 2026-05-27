@@ -1,5 +1,5 @@
 order_id,date,product,category,quantity,price
-1,2025-01-01,Laptop Pro 16,Electronics,-2,-6200
+1,2025-01-01,Laptop Pro 16,Electronics,2,6200
 2,2025-01-01,Office Chair,Furniture,8,850
 3,2025-01-02,Standing Desk,Furniture,4,2400
 4,2025-01-02,Wireless Mouse,Electronics,25,120

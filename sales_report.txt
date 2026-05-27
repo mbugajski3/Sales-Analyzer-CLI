@@ -2,7 +2,7 @@ SALES-ANALYZER-CLI 1.0
 
 Summary:
 Total revenue: 1 165 630.00 PLN
-Total quantity sold: 5717 pieces
+Total quantity sold: 5721 pieces
 Average order value: 11 656.30 PLN
 
 Top results: 
@@ -11,7 +11,7 @@ Product with highest revenue: Smartphone X - 172 200.00 PLN
 Category with highest revenue: Electronics - 631 420.00 PLN
 
 Products sold: 
-- Laptop Pro 16: 17 pieces
+- Laptop Pro 16: 21 pieces
 - Office Chair: 50 pieces
 - Standing Desk: 25 pieces
 - Wireless Mouse: 135 pieces

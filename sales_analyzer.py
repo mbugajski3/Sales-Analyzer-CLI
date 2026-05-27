@@ -15,6 +15,7 @@ def load_sales(filename):
             exit()
 
         sales = []
+        errors = []
 
         for row in reader: 
             order_id = row["order_id"]
@@ -29,9 +30,11 @@ def load_sales(filename):
             price = float(price)
 
             if quantity <= 0:
-                raise ValueError
+                errors.append("Quantity must be greater than 0.")
             if price < 0:
-                raise ValueError
+                errors.append("Price cannot be negative.")
+            if errors:
+                raise ValueError("".join(errors))
     
     
             sale = {
@@ -193,8 +196,8 @@ def main():
     except FileNotFoundError:
         print("Error: sales.csv file not found.")
         exit()
-    except ValueError:
-        print("Error: invalid numeric value in sales.csv.")
+    except ValueError as error:
+        print(f"Error: {error}")
         exit()
     if not sales:
         print("Error: sales.csv contains no sales data.")
