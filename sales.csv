@@ -1,16 +1,101 @@
 order_id,date,product,category,quantity,price
-1,2025-01-01,Apples,Food,5,3
-2,2025-01-01,Bananas,Food,3,4
-3,2025-01-02,Keyboard,Electronics,1,120
-4,2025-01-02,Mouse,Electronics,2,50
-5,2025-01-03,Apples,Food,10,3
-6,2025-01-03,Chair,Furniture,1,250
-7,2025-01-04,Desk,Furniture,1,400
-8,2025-01-04,Bananas,Food,6,4
-9,2025-01-05,Monitor,Electronics,1,700
-10,2025-01-05,Notebook,Office,4,15
-11,2025-01-06,Pen,Office,10,2
-12,2025-01-06,Desk Lamp,Furniture,2,80
-13,2025-01-07,Orange Juice,Food,3,8
-14,2025-01-07,Headphones,Electronics,1,200
-15,2025-01-08,Water Bottle,Office,5,25
+1,2025-01-01,Laptop Pro 16,Electronics,2,6200
+2,2025-01-01,Office Chair,Furniture,8,850
+3,2025-01-02,Standing Desk,Furniture,4,2400
+4,2025-01-02,Wireless Mouse,Electronics,25,120
+5,2025-01-03,Mechanical Keyboard,Electronics,15,450
+6,2025-01-03,Monitor 32,Electronics,7,1800
+7,2025-01-04,Coffee Beans Premium,Food,40,65
+8,2025-01-04,Water Bottle,Office,60,35
+9,2025-01-05,Printer Paper Box,Office,30,95
+10,2025-01-05,Conference Table,Furniture,2,5200
+11,2025-01-06,Laptop Pro 16,Electronics,3,6200
+12,2025-01-06,Ergonomic Keyboard,Electronics,12,390
+13,2025-01-07,Desk Lamp,Furniture,20,180
+14,2025-01-07,Notebook Premium,Office,150,18
+15,2025-01-08,Smartphone X,Electronics,10,4100
+16,2025-01-08,Tablet Air,Electronics,6,2900
+17,2025-01-09,Office Chair,Furniture,12,850
+18,2025-01-09,Standing Desk,Furniture,3,2400
+19,2025-01-10,Protein Bars,Food,200,12
+20,2025-01-10,Orange Juice Pack,Food,90,16
+21,2025-01-11,Wireless Mouse,Electronics,40,120
+22,2025-01-11,Monitor 32,Electronics,5,1800
+23,2025-01-12,Projector 4K,Electronics,2,7600
+24,2025-01-12,Whiteboard Large,Office,10,420
+25,2025-01-13,Conference Table,Furniture,1,5200
+26,2025-01-13,Desk Organizer,Office,80,45
+27,2025-01-14,Laptop Pro 16,Electronics,1,6200
+28,2025-01-14,Smartphone X,Electronics,7,4100
+29,2025-01-15,Coffee Beans Premium,Food,55,65
+30,2025-01-15,Office Chair,Furniture,6,850
+31,2025-01-16,Printer Paper Box,Office,45,95
+32,2025-01-16,Mechanical Keyboard,Electronics,20,450
+33,2025-01-17,Tablet Air,Electronics,4,2900
+34,2025-01-17,Standing Desk,Furniture,5,2400
+35,2025-01-18,Protein Bars,Food,300,12
+36,2025-01-18,Water Bottle,Office,120,35
+37,2025-01-19,Projector 4K,Electronics,1,7600
+38,2025-01-19,Desk Lamp,Furniture,18,180
+39,2025-01-20,Notebook Premium,Office,220,18
+40,2025-01-20,Smartphone X,Electronics,5,4100
+41,2025-01-21,Monitor 32,Electronics,9,1800
+42,2025-01-21,Conference Table,Furniture,2,5200
+43,2025-01-22,Orange Juice Pack,Food,130,16
+44,2025-01-22,Ergonomic Keyboard,Electronics,16,390
+45,2025-01-23,Laptop Pro 16,Electronics,4,6200
+46,2025-01-23,Whiteboard Large,Office,7,420
+47,2025-01-24,Office Chair,Furniture,10,850
+48,2025-01-24,Desk Organizer,Office,140,45
+49,2025-01-25,Coffee Beans Premium,Food,70,65
+50,2025-01-25,Projector 4K,Electronics,3,7600
+51,2025-01-26,Server Rack,IT Equipment,2,9800
+52,2025-01-26,Network Switch,IT Equipment,6,2400
+53,2025-01-27,USB-C Hub,Electronics,45,180
+54,2025-01-27,External SSD 2TB,Electronics,18,650
+55,2025-01-28,Office Sofa,Furniture,3,3200
+56,2025-01-28,Acoustic Panels,Office,35,160
+57,2025-01-29,Green Tea Box,Food,85,28
+58,2025-01-29,Snack Box,Food,120,34
+59,2025-01-30,Router Pro,IT Equipment,8,1100
+60,2025-01-30,Firewall Appliance,IT Equipment,2,12400
+61,2025-01-31,Laptop Pro 16,Electronics,5,6200
+62,2025-01-31,Monitor 32,Electronics,12,1800
+63,2025-02-01,Office Chair,Furniture,14,850
+64,2025-02-01,Standing Desk,Furniture,6,2400
+65,2025-02-02,Mechanical Keyboard,Electronics,25,450
+66,2025-02-02,Wireless Mouse,Electronics,70,120
+67,2025-02-03,Notebook Premium,Office,300,18
+68,2025-02-03,Desk Organizer,Office,160,45
+69,2025-02-04,Protein Bars,Food,420,12
+70,2025-02-04,Orange Juice Pack,Food,180,16
+71,2025-02-05,Smartphone X,Electronics,9,4100
+72,2025-02-05,Tablet Air,Electronics,7,2900
+73,2025-02-06,Projector 4K,Electronics,4,7600
+74,2025-02-06,Conference Table,Furniture,3,5200
+75,2025-02-07,Server Rack,IT Equipment,1,9800
+76,2025-02-07,Network Switch,IT Equipment,10,2400
+77,2025-02-08,Firewall Appliance,IT Equipment,1,12400
+78,2025-02-08,Router Pro,IT Equipment,15,1100
+79,2025-02-09,Coffee Beans Premium,Food,90,65
+80,2025-02-09,Green Tea Box,Food,140,28
+81,2025-02-10,Water Bottle,Office,220,35
+82,2025-02-10,Printer Paper Box,Office,70,95
+83,2025-02-11,Whiteboard Large,Office,12,420
+84,2025-02-11,Acoustic Panels,Office,50,160
+85,2025-02-12,External SSD 2TB,Electronics,20,650
+86,2025-02-12,USB-C Hub,Electronics,90,180
+87,2025-02-13,Office Sofa,Furniture,4,3200
+88,2025-02-13,Desk Lamp,Furniture,25,180
+89,2025-02-14,Laptop Pro 16,Electronics,6,6200
+90,2025-02-14,Smartphone X,Electronics,11,4100
+91,2025-02-15,Monitor 32,Electronics,10,1800
+92,2025-02-15,Tablet Air,Electronics,8,2900
+93,2025-02-16,Server Rack,IT Equipment,3,9800
+94,2025-02-16,Network Switch,IT Equipment,12,2400
+95,2025-02-17,Conference Table,Furniture,2,5200
+96,2025-02-17,Standing Desk,Furniture,7,2400
+97,2025-02-18,Snack Box,Food,240,34
+98,2025-02-18,Protein Bars,Food,500,12
+99,2025-02-19,Desk Organizer,Office,200,45
+100,2025-02-19,Notebook Premium,Office,400,18

@@ -1,47 +1,82 @@
 SALES-ANALYZER-CLI 1.0 
 
 Summary:
-Total revenue: 2240.0 PLN
-Total quantity sold: 55 pieces
-Average order value: 149.33 PLN
+Total revenue: 1 165 630.00 PLN
+Total quantity sold: 5721 pieces
+Average order value: 11 656.30 PLN
 
 Top results: 
-Best-selling product overall: Apples - 15 pieces
-Product with highest revenue: Monitor - 700.0 PLN
-Category with highest revenue: Electronics - 1120.0 PLN
+Best-selling product overall: Protein Bars - 1420 pieces
+Product with highest revenue: Smartphone X - 172 200.00 PLN
+Category with highest revenue: Electronics - 631 420.00 PLN
 
 Products sold: 
-- Apples: 15 pieces
-- Bananas: 9 pieces
-- Keyboard: 1 piece
-- Mouse: 2 pieces
-- Chair: 1 piece
-- Desk: 1 piece
-- Monitor: 1 piece
-- Notebook: 4 pieces
-- Pen: 10 pieces
-- Desk Lamp: 2 pieces
-- Orange Juice: 3 pieces
-- Headphones: 1 piece
-- Water Bottle: 5 pieces
+- Laptop Pro 16: 21 pieces
+- Office Chair: 50 pieces
+- Standing Desk: 25 pieces
+- Wireless Mouse: 135 pieces
+- Mechanical Keyboard: 60 pieces
+- Monitor 32: 43 pieces
+- Coffee Beans Premium: 255 pieces
+- Water Bottle: 400 pieces
+- Printer Paper Box: 145 pieces
+- Conference Table: 10 pieces
+- Ergonomic Keyboard: 28 pieces
+- Desk Lamp: 63 pieces
+- Notebook Premium: 1070 pieces
+- Smartphone X: 42 pieces
+- Tablet Air: 25 pieces
+- Protein Bars: 1420 pieces
+- Orange Juice Pack: 400 pieces
+- Projector 4K: 10 pieces
+- Whiteboard Large: 29 pieces
+- Desk Organizer: 580 pieces
+- Server Rack: 6 pieces
+- Network Switch: 28 pieces
+- USB-C Hub: 135 pieces
+- External SSD 2TB: 38 pieces
+- Office Sofa: 7 pieces
+- Acoustic Panels: 85 pieces
+- Green Tea Box: 225 pieces
+- Snack Box: 360 pieces
+- Router Pro: 23 pieces
+- Firewall Appliance: 3 pieces
 
 Revenue by category: 
-- Food: 105.0 PLN
-- Electronics: 1120.0 PLN
-- Furniture: 810.0 PLN
-- Office: 205.0 PLN
+- Electronics: 631 420.00 PLN
+- Furniture: 188 240.00 PLN
+- Food: 58 555.00 PLN
+- Office: 98 915.00 PLN
+- IT Equipment: 188 500.00 PLN
 
 Revenue by product:
-- Apples: 45.0 PLN
-- Bananas: 36.0 PLN
-- Keyboard: 120.0 PLN
-- Mouse: 100.0 PLN
-- Chair: 250.0 PLN
-- Desk: 400.0 PLN
-- Monitor: 700.0 PLN
-- Notebook: 60.0 PLN
-- Pen: 20.0 PLN
-- Desk Lamp: 160.0 PLN
-- Orange Juice: 24.0 PLN
-- Headphones: 200.0 PLN
-- Water Bottle: 125.0 PLN
+- Laptop Pro 16: 130 200.00 PLN
+- Office Chair: 42 500.00 PLN
+- Standing Desk: 60 000.00 PLN
+- Wireless Mouse: 16 200.00 PLN
+- Mechanical Keyboard: 27 000.00 PLN
+- Monitor 32: 77 400.00 PLN
+- Coffee Beans Premium: 16 575.00 PLN
+- Water Bottle: 14 000.00 PLN
+- Printer Paper Box: 13 775.00 PLN
+- Conference Table: 52 000.00 PLN
+- Ergonomic Keyboard: 10 920.00 PLN
+- Desk Lamp: 11 340.00 PLN
+- Notebook Premium: 19 260.00 PLN
+- Smartphone X: 172 200.00 PLN
+- Tablet Air: 72 500.00 PLN
+- Protein Bars: 17 040.00 PLN
+- Orange Juice Pack: 6 400.00 PLN
+- Projector 4K: 76 000.00 PLN
+- Whiteboard Large: 12 180.00 PLN
+- Desk Organizer: 26 100.00 PLN
+- Server Rack: 58 800.00 PLN
+- Network Switch: 67 200.00 PLN
+- USB-C Hub: 24 300.00 PLN
+- External SSD 2TB: 24 700.00 PLN
+- Office Sofa: 22 400.00 PLN
+- Acoustic Panels: 13 600.00 PLN
+- Green Tea Box: 6 300.00 PLN
+- Snack Box: 12 240.00 PLN
+- Router Pro: 25 300.00 PLN
+- Firewall Appliance: 37 200.00 PLN
