@@ -193,10 +193,14 @@ def save_report(
 
 
 def main():
+    filename = sys.argv[1]
     if len(sys.argv) <  2:
         print("Usage: python sales_analyzer.py sales.csv")
         exit()
-    filename = sys.argv[1]
+    if not filename.endswith(".csv"):
+        print("Error: input file must be a .csv file.")
+        exit()
+    
     report_filename = filename.replace(".csv", "_report.txt")
     print(f"Loading file: {filename}")
 
