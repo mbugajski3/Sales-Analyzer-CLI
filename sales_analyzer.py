@@ -1,4 +1,5 @@
 import csv
+import sys
 
 def load_sales(filename):
     with open(filename) as file:
@@ -158,10 +159,11 @@ def save_report(
     top_revenue_category_value,
     quantity_by_product,
     revenue_by_category,
-    revenue_by_product
+    revenue_by_product,
+    report_filename
     ):
     
-    with open("sales_report.txt", "w") as file:
+    with open(report_filename, "w") as file:
         file.write("SALES-ANALYZER-CLI 1.0 \n")
         file.write("\n")
         file.write("Summary:\n")
@@ -191,16 +193,24 @@ def save_report(
 
 
 def main():
+    if len(sys.argv) <  2:
+        print("Usage: python sales_analyzer.py sales.csv")
+        exit()
+    filename = sys.argv[1]
+    report_filename = filename.replace(".csv", "_report.txt")
+    print(f"Loading file: {filename}")
+
+
     try:
-        sales = load_sales("sales.csv")
+        sales = load_sales(filename)
     except FileNotFoundError:
-        print("Error: sales.csv file not found.")
+        print("Error: .csv file not found.")
         exit()
     except ValueError as error:
         print(f"Error: {error}")
         exit()
     if not sales:
-        print("Error: sales.csv contains no sales data.")
+        print("Error: .csv contains no sales data.")
         exit()
 
     total_revenue, total_quantity_sold, order_count, quantity_by_product, revenue_by_product, revenue_by_category = calculate_metrics(sales)
@@ -233,11 +243,12 @@ def main():
         top_revenue_category_value,
         quantity_by_product,
         revenue_by_category,
-        revenue_by_product
+        revenue_by_product,
+        report_filename
     )
 
 
-    print("Report saved to sales_report.txt")
+    print(f"Report saved to {report_filename}")
     print()
     
 

@@ -1,0 +1,54 @@
+SALES-ANALYZER-CLI 1.0 
+
+Summary:
+Total revenue: 352 800.00 PLN
+Total quantity sold: 2510 pieces
+Average order value: 17 640.00 PLN
+
+Top results: 
+Best-selling product overall: Premium Coffee - 550 pieces
+Product with highest revenue: Cloud Server Package - 105 000.00 PLN
+Category with highest revenue: IT Services - 179 000.00 PLN
+
+Products sold: 
+- Gaming Laptop: 5 pieces
+- Office Monitor: 12 pieces
+- Ergonomic Chair: 35 pieces
+- Executive Desk: 5 pieces
+- Premium Coffee: 550 pieces
+- Energy Drink Pack: 180 pieces
+- Printer Paper: 250 pieces
+- Office Pens: 500 pieces
+- Cloud Server Package: 7 pieces
+- Cybersecurity Audit: 2 pieces
+- Wireless Headset: 35 pieces
+- Bookshelf: 18 pieces
+- Snack Bundle: 400 pieces
+- Notebook Set: 350 pieces
+- Desk Calendar: 160 pieces
+- Database Migration: 1 piece
+
+Revenue by category: 
+- Electronics: 61 900.00 PLN
+- Furniture: 57 890.00 PLN
+- Food: 36 780.00 PLN
+- Office: 17 230.00 PLN
+- IT Services: 179 000.00 PLN
+
+Revenue by product:
+- Gaming Laptop: 37 500.00 PLN
+- Office Monitor: 13 200.00 PLN
+- Ergonomic Chair: 33 250.00 PLN
+- Executive Desk: 16 000.00 PLN
+- Premium Coffee: 23 100.00 PLN
+- Energy Drink Pack: 6 480.00 PLN
+- Printer Paper: 5 500.00 PLN
+- Office Pens: 2 000.00 PLN
+- Cloud Server Package: 105 000.00 PLN
+- Cybersecurity Audit: 44 000.00 PLN
+- Wireless Headset: 11 200.00 PLN
+- Bookshelf: 8 640.00 PLN
+- Snack Bundle: 7 200.00 PLN
+- Notebook Set: 5 250.00 PLN
+- Desk Calendar: 4 480.00 PLN
+- Database Migration: 30 000.00 PLN
